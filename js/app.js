@@ -66,6 +66,8 @@ if (myEducation === 'yes' || myEducation === 'y') {
 }
 question3();
 
+
+function question4(){
 // fourth question
 let myWork = prompt('Do you think I have been working before starting this course?');
 myWork = myWork.toLowerCase();
@@ -79,6 +81,8 @@ if (myWork === 'yes' || myWork === 'y') {
 } else {
     alert('you should answer with either yes/y or no/n next time');
 }
+}
+question4();
 
 
 // fifth question
