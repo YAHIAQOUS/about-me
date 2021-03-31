@@ -31,7 +31,7 @@ question1();
 // second question
 
 
-//function secondQuestion(){
+function question2(){
 let myBorn = prompt('Ok now do you think I was borned in Jordan?');
 myBorn = myBorn.toLowerCase();
 // console.log(myBorn);
@@ -45,8 +45,8 @@ if (myBorn === 'yes' || myBorn === 'y') {
     alert('you should answer with either yes/y or no/n next time');
 }
 
-//}
-secondQuestion();
+}
+question2();
 // third question
 let myEducation = prompt('Do you think I have a bachelor degree in software development?');
 myEducation = myEducation.toLowerCase();
