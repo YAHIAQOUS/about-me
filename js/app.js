@@ -47,6 +47,9 @@ if (myBorn === 'yes' || myBorn === 'y') {
 
 }
 question2();
+
+
+function question3(){
 // third question
 let myEducation = prompt('Do you think I have a bachelor degree in software development?');
 myEducation = myEducation.toLowerCase();
@@ -60,7 +63,8 @@ if (myEducation === 'yes' || myEducation === 'y') {
 } else {
     alert('you should answer with either yes/y or no/n next time');
 }
-
+}
+question3();
 
 // fourth question
 let myWork = prompt('Do you think I have been working before starting this course?');
