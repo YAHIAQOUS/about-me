@@ -103,6 +103,8 @@ if (myInterest === 'yes' || myInterest === 'y') {
 question5();
 
 
+
+function question6(){
 // sixth question
 let number = prompt('If you combine my birthday date (day + month), you\'ll get a number between (0-20), you have only 4 opportunities to guess what is?');
 // console.log(number);
@@ -123,6 +125,8 @@ for (let i = 1; i < 4 || number == 10; i++) {
 if (number != 10) {
     alert('the correct answer is 10')
 }
+}
+question6();
 
 
 // seventh question
