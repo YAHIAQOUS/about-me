@@ -85,6 +85,7 @@ if (myWork === 'yes' || myWork === 'y') {
 question4();
 
 
+function question5(){
 // fifth question
 let myInterest = prompt('Ok we are almost done ' + userName + '. Do you think I love video games?');
 myInterest = myInterest.toLowerCase();
@@ -98,6 +99,8 @@ if (myInterest === 'yes' || myInterest === 'y') {
 } else {
     alert('you should answer with either yes/y or no/n next time');
 }
+}
+question5();
 
 
 // sixth question
