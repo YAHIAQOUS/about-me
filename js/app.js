@@ -129,6 +129,8 @@ if (number != 10) {
 question6();
 
 
+function question7(){
+
 // seventh question
 let favouriteAnimes = ['attack on titan','steins gate','psycho-pass','hunter x hunter','black clover']
 let favouriteAnimesAnswer = prompt('guess one of my top five favourite anime, you have only 6 opportunities')
@@ -143,8 +145,6 @@ for (let i = 1; i < 6 ; i++) {
         favouriteAnimesAnswer = prompt ('it wasn\'t, think of another one')
     }
 }
-
-
-
-
+}
+question7();
 alert('It was fun to play with you, ' + userName + ' your score equal = ' + userScore + ' out of 7');
