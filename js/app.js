@@ -8,6 +8,10 @@ alert('Ready? Lets go ' + userName);
 
 let userScore = 0
 
+
+
+function question1 (){
+
 // first question
 let myNationality = prompt('Do you think I am Jordanian?');
 myNationality = myNationality.toLowerCase();
@@ -21,9 +25,13 @@ if (myNationality === 'yes' || myNationality === 'y') {
 } else {
     alert('you should answer with either yes/y or no/n next time');
 }
-
+}
+question1();
 
 // second question
+
+
+function question2(){
 let myBorn = prompt('Ok now do you think I was borned in Jordan?');
 myBorn = myBorn.toLowerCase();
 // console.log(myBorn);
@@ -37,7 +45,11 @@ if (myBorn === 'yes' || myBorn === 'y') {
     alert('you should answer with either yes/y or no/n next time');
 }
 
+}
+question2();
 
+
+function question3(){
 // third question
 let myEducation = prompt('Do you think I have a bachelor degree in software development?');
 myEducation = myEducation.toLowerCase();
@@ -51,8 +63,11 @@ if (myEducation === 'yes' || myEducation === 'y') {
 } else {
     alert('you should answer with either yes/y or no/n next time');
 }
+}
+question3();
 
 
+function question4(){
 // fourth question
 let myWork = prompt('Do you think I have been working before starting this course?');
 myWork = myWork.toLowerCase();
@@ -66,8 +81,11 @@ if (myWork === 'yes' || myWork === 'y') {
 } else {
     alert('you should answer with either yes/y or no/n next time');
 }
+}
+question4();
 
 
+function question5(){
 // fifth question
 let myInterest = prompt('Ok we are almost done ' + userName + '. Do you think I love video games?');
 myInterest = myInterest.toLowerCase();
@@ -81,8 +99,12 @@ if (myInterest === 'yes' || myInterest === 'y') {
 } else {
     alert('you should answer with either yes/y or no/n next time');
 }
+}
+question5();
 
 
+
+function question6(){
 // sixth question
 let number = prompt('If you combine my birthday date (day + month), you\'ll get a number between (0-20), you have only 4 opportunities to guess what is?');
 // console.log(number);
@@ -103,7 +125,11 @@ for (let i = 1; i < 4 || number == 10; i++) {
 if (number != 10) {
     alert('the correct answer is 10')
 }
+}
+question6();
 
+
+function question7(){
 
 // seventh question
 let favouriteAnimes = ['attack on titan','steins gate','psycho-pass','hunter x hunter','black clover']
@@ -119,8 +145,6 @@ for (let i = 1; i < 6 ; i++) {
         favouriteAnimesAnswer = prompt ('it wasn\'t, think of another one')
     }
 }
-
-
-
-
+}
+question7();
 alert('It was fun to play with you, ' + userName + ' your score equal = ' + userScore + ' out of 7');
