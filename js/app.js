@@ -32,7 +32,7 @@ question1();
 function question2() {
     let myBorn = prompt('Ok now do you think I was borned in Jordan? \nYou should answer with either yes/y or no/n');
     myBorn = myBorn.toLowerCase();
-    // console.log(myBorn);
+    
 
     if (myBorn === 'yes' || myBorn === 'y') {
         alert('Yeah thats right, ' + userName + '. In Amman')
@@ -51,7 +51,7 @@ question2();
 function question3() {
     let myEducation = prompt('Do you think I have a bachelor degree in software development? \nYou should answer with either yes/y or no/n');
     myEducation = myEducation.toLowerCase();
-    // console.log(myEducation);
+
 
     if (myEducation === 'yes' || myEducation === 'y') {
         alert('Actually no, I have a bachelor degree in Architecture and learning about web development in LTUC these days');
@@ -70,7 +70,7 @@ question3();
 function question4() {
     let myWork = prompt('Do you think I have been working before starting this course? \nYou should answer with either yes/y or no/n');
     myWork = myWork.toLowerCase();
-    // console.log(myWork);
+
 
     if (myWork === 'yes' || myWork === 'y') {
         alert('Yeah thats right, I have worked for 5 months and then start this course');
@@ -89,7 +89,7 @@ question4();
 function question5() {
     let myInterest = prompt('Ok we are almost done ' + userName + '. Do you think I love video games? \nYou should answer with either yes/y or no/n');
     myInterest = myInterest.toLowerCase();
-    // console.log(myInterest);
+
 
     if (myInterest === 'yes' || myInterest === 'y') {
         alert('Sure thats right ' + userName);
@@ -105,33 +105,7 @@ question5();
 
 
 
-// // sixth question first attempt
-// function question6(){
-// let number = prompt('If you combine my birthday date (day + month), you\'ll get a number between (0-20), you have only 4 opportunities to guess what is?');
-// // console.log(number);
-
-// for (let i = 1; i < 4 || number == 10; i++) {
-//     if (number == 10) {
-//         alert('that was right, ' + userName);
-//         userScore++;
-//         break;
-//     } else if (number > 10 && number <= 20) {
-//         number = prompt('too high number, choose lower');
-//     } else if (number < 10 && number >= 0) {
-//         number = prompt('too low number, choose higher');
-//     } else {
-//         number = prompt('choose only a number between (0-20)');
-//     }
-// }
-// if (number != 10) {
-//     alert('the correct answer is 10')
-// }
-// }
-// question6();
-
-
-
-// sixth question second attempt
+// sixth question
 function question6() {
     let attempts = 4
     let number = 0
@@ -177,47 +151,19 @@ question6();
 
 
 
-
-
-// // seventh question first attempt
-// function question7() {
-//     let favouriteAnimes = ['attack on titan', 'steins gate', 'psycho-pass', 'hunter x hunter', 'black clover']
-//     let favouriteAnimesAnswer = prompt('guess one of my top five favourite anime, you have only 6 opportunities')
-//     favouriteAnimesAnswer = favouriteAnimesAnswer.toLowerCase
-
-//     for (let i = 1; i < 6; i++) {
-//         if (favouriteAnimesAnswer === favouriteAnimes[0] || favouriteAnimesAnswer === favouriteAnimes[1] || favouriteAnimesAnswer === favouriteAnimes[2] || favouriteAnimesAnswer === favouriteAnimes[3] || favouriteAnimesAnswer === favouriteAnimes[4]) {
-//             alert('that was right')
-//             userScore++;
-//             break;
-//         } else {
-//             favouriteAnimesAnswer = prompt('it wasn\'t, think of another one')
-//         }
-//     }
-// }
-// question7();
-// alert('It was fun to play with you, ' + userName + ' your score equal = ' + userScore + ' out of 7');
-
-
-
-
-// seventh question second attempt
+// seventh question
 function question7() {
     let favoriteAnimes = ['attack on titan', 'steins gate', 'psycho-pass', 'hunter x hunter', 'black clover'];
-    // console.log(favoriteAnimes)
+
     let userAnswer = ''
     let attempts = 6
 
     for (let i = attempts; i > 0; i--) {
-        // console.log(i)
         userAnswer = prompt(`Guess one of my top five favourite anime? \nYou have only ${i} opportunities`);
         userAnswer = userAnswer.toLowerCase();
-        // console.log(userAnswer)
 
 
         for (let j = 0; j < 5; j++) {
-            // console.log(j)
-            // console.log(favoriteAnimes[j])
             if (userAnswer === favoriteAnimes[j]) {
                 alert('That was right, this is my favorite list: \n' + favoriteAnimes);
                 userScore++;
@@ -232,9 +178,6 @@ function question7() {
     }
 }
 question7();
-
-
-// console.log(userScore)
 
 
 
